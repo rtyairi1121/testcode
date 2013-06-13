@@ -11,5 +11,10 @@ public class Super_Hello_xxx extends Hello_xxx {
 	public void setHello( String hello){
 		this.hello = hello;
 	}
-
+	public void outputMessage(){
+		System.out.println("Super_Hello‚ÌƒNƒ‰ƒX");
+	}
+	public void testOutputMessage(){
+		super.outputMessage();
+	}
 }

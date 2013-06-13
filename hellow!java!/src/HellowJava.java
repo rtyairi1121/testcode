@@ -15,6 +15,8 @@ public class HellowJava {
 		String words1 = world.getHello();
 
 		System.out.println(words1 + words2);
+		world.outputMessage();
+		world.testOutputMessage();
 	}
 
 }
