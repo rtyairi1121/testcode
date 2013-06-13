@@ -1,0 +1,16 @@
+import jp.co.rytairi.*;
+
+public class HellowJava {
+
+	public static void main(String[] args) {
+		String name = "world!!!";
+
+		Super_Hello_xxx world = new Super_Hello_xxx();
+		world.setName(name);
+
+		String words = world.getName();
+
+		System.out.println("Hellow!!" + words);
+	}
+
+}

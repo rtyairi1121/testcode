@@ -1,0 +1,687 @@
+package co.jp.example.sample.contacts;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.os.RemoteException;
+import android.app.Activity;
+import android.view.Menu;
+import android.content.ContentProviderOperation;
+import android.content.ContentProviderResult;
+import android.content.OperationApplicationException;
+import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds.Email;
+import android.provider.ContactsContract.CommonDataKinds.Event;
+import android.provider.ContactsContract.CommonDataKinds.GroupMembership;
+import android.provider.ContactsContract.CommonDataKinds.Note;
+import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
+import android.provider.ContactsContract.CommonDataKinds.Website;
+import android.provider.ContactsContract.Groups;
+import android.provider.ContactsContract.RawContacts;
+import android.provider.ContactsContract.Data;
+import android.provider.ContactsContract.CommonDataKinds.StructuredName;
+
+public class MainActivity extends Activity {
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		int i = 0;
+		while (i < 1000) {
+
+			ArrayList<ContentProviderOperation> ops = new ArrayList<ContentProviderOperation>();
+
+			int rawContactInsertIndex = ops.size();
+
+			// raw_contactÉfÅ[É^ÇçÏê¨
+			ops.add(ContentProviderOperation.newInsert(RawContacts.CONTENT_URI)
+					.withValue(RawContacts.ACCOUNT_TYPE, "jp.kyocera.localcontacts")
+					.withValue(RawContacts.ACCOUNT_NAME, "Contacts")
+					.withValue(RawContacts.STARRED, 1)
+					.withValue(RawContacts.AGGREGATION_MODE, RawContacts.AGGREGATION_MODE_DISABLED)
+					.withValue(RawContacts.SEND_TO_VOICEMAIL, 1).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, StructuredName.CONTENT_ITEM_TYPE)
+					.withValue(StructuredName.DISPLAY_NAME,
+							"Mike Sullivan_" + i).build());
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "9999999999") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09011111111") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09022222222") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09033333333") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09044444444") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09055555555") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09066666666") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09077777777") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09088888888") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(
+							ContactsContract.Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE)
+					.withValue(Phone.NUMBER, "09099999999") // Number of the
+															// person
+					.withValue(Phone.TYPE, Phone.TYPE_MOBILE).build()); // Type
+																		// of
+																		// mobile
+																		// number
+
+			/*
+			 * Email
+			 */
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "a@a")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "b@b")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "c@c")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "d@d")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "e@e")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "f@f")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "g@g")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "h@h")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "i@i")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(ContactsContract.Data.MIMETYPE,
+							Email.CONTENT_ITEM_TYPE)
+					.withValue(Email.DATA, "j@j")
+					.withValue(Email.TYPE, Email.TYPE_WORK).build());
+
+			/*
+			 * èZèä
+			 */
+			/*
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "123-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "023-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "113-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "223-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "323-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "423-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "523-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "623-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "723-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE,
+							StructuredPostal.CONTENT_ITEM_TYPE)
+					.withValue(StructuredPostal.POSTCODE, "823-4567")
+					.withValue(StructuredPostal.STREET, "îLí ÇË1-23-45")
+					.withValue(StructuredPostal.CITY, "îLç„és")
+					.withValue(StructuredPostal.REGION, "îLç„ï{")
+					.withValue(StructuredPostal.COUNTRY, "ì˙ñ{")
+					.withValue(StructuredPostal.TYPE,
+							StructuredPostal.TYPE_HOME).build());
+*/
+			/*
+			 * ÉÅÉÇ
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Note.CONTENT_ITEM_TYPE)
+					.withValue(Note.NOTE, "â¥ÅAîL").build());
+*/
+			/*
+			 * ÉCÉxÉìÉg
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861121")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861101")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861102")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861103")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861104")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861105")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861106")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861107")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861108")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Event.CONTENT_ITEM_TYPE)
+					.withValue(Event.START_DATE, "19861109")
+					.withValue(Event.TYPE, "TYPE_ANNIVERSARY").build());
+*/
+			/*
+			 * webÉTÉCÉg
+
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www1.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www2.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www3.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www4.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www5.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www6.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www7.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www8.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, Website.CONTENT_ITEM_TYPE)
+					.withValue(Website.URL, "www9.test.www")
+					.withValue(Website.TYPE, "TYPE_HOMEPAGE").build());
+*/
+			/*
+			 * ÉOÉãÅ[Év
+			 */
+			/*
+			 * ÉOÉãÅ[Év
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2338").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2339").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2340").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2341").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2342").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2343").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2344").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2345").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2346").build());
+
+			ops.add(ContentProviderOperation
+					.newInsert(Data.CONTENT_URI)
+					.withValueBackReference(Data.RAW_CONTACT_ID,
+							rawContactInsertIndex)
+					.withValue(Data.MIMETYPE, GroupMembership.CONTENT_ITEM_TYPE)
+					.withValue(GroupMembership.GROUP_ROW_ID, "2347").build());
+
+*/
+
+
+			try {
+				ContentProviderResult[] res = getContentResolver().applyBatch(
+						ContactsContract.AUTHORITY, ops);
+			} catch (RemoteException e) {
+				// error
+			} catch (OperationApplicationException e) {
+				// error
+			}
+			i++;
+		}
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}

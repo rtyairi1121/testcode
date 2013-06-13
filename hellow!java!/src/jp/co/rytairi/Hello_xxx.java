@@ -1,0 +1,20 @@
+package jp.co.rytairi;
+
+public class Hello_xxx {
+	private String name;
+
+	public Hello_xxx(){
+		this.name = "null";
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public String getName(){
+		return(this.name);
+	}
+
+
+
+}

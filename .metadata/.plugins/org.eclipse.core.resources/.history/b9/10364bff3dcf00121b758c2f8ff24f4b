@@ -1,0 +1,6 @@
+public class chapter5 {
+	public static void hello (){
+		System.out.println("‚±‚ñ‚É‚¿‚Í");
+	}
+}
+

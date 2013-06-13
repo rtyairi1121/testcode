@@ -1,0 +1,10 @@
+public class chapter4 {
+
+	public static void main(String[] args)
+	{
+		int[] score;
+		score = new int[5];
+		int kobakos = score.length;
+		System.out.println(kobakos);
+	}
+}

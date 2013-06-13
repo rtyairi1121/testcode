@@ -1,0 +1,17 @@
+
+public class rpgProject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		double height;
+		height = 17.2;
+		float weight;
+		weight = 67.5F;
+
+	}
+
+}

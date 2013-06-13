@@ -1,0 +1,47 @@
+
+public class rpgProject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+/*
+
+		//¬”Œ^
+		double height;
+		height = 17.2;
+		float weight;
+		weight = 67.5F;
+
+		//boolenŒ^
+		boolean isMarried;
+		isMarried = true;
+
+		//•¶šŒ^
+		char gender;
+		gender = '’j';
+		String name;
+		name = "‚·‚ª‚í‚ç";
+*/
+
+/*
+		final double TAX = 1.05;
+		int fax = 5;
+		System.out.println("5–œ‰~‚©‚ç4–œ‰~‚É’l‰º‚°‚µ‚Ü‚·");
+		fax = 4;
+		System.out.println("FAX‚ÌV‰¿Ši(Å)");
+		System.out.println(fax * TAX + "–œ‰~");
+*/
+		int longitudinal = 3;
+		int horizontal = 5;
+		int result = longitudinal * horizontal;
+		System.out.println("c•" + longitudinal + "‰¡•" + horizontal + "‚Ì’·•ûŒ`‚Ì–ÊÏ‚ÍA" + result);
+
+		boolean bolleanTest = true;
+		string charTest = "‹ì";
+		double doubeTest = 3.14;
+
+	}
+
+}

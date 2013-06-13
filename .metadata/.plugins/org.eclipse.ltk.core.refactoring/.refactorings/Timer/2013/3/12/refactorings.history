@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyService.java&apos; to &apos;Service3/src/co.jp.example.service2&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;Timer&apos;&#x0D;&#x0A;- 宛先要素: &apos;Service3/src/co.jp.example.service2&apos;&#x0D;&#x0A;- オリジナル要素: &apos;co.jp.example.timer.MyService.java&apos;" description="コンパイル単位をコピー" destination="=Service3/src&lt;co.jp.example.service2" element1="/src&lt;co.jp.example.timer{MyService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1363934587602" units="1" version="1.0"/>
+</session>

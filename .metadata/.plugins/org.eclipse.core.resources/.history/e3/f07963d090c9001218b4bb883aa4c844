@@ -1,0 +1,30 @@
+
+public class rpgProject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+
+		//小数型
+		double height;
+		height = 17.2;
+		float weight;
+		weight = 67.5F;
+
+		//boolen型
+		boolean isMarried;
+		isMarried = true;
+
+		//文字型
+		char gender;
+		gender = '男';
+		String name;
+		name = "すがわら";
+
+
+	}
+
+}

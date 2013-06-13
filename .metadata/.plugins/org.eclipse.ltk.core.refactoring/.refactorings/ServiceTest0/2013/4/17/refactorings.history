@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="ソース・フォルダー &apos;gen&apos; を &apos;SimpleCalc&apos; にコピー&#x0D;&#x0A;- 元のプロジェクト: &apos;ServiceTest0&apos;&#x0D;&#x0A;- 宛先要素: &apos;SimpleCalc&apos;&#x0D;&#x0A;- オリジナル要素: &apos;ServiceTest0/gen&apos;" description="ソース・フォルダーをコピー" destination="=SimpleCalc" element1="/gen" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1366873503708" version="1.0"/>
+</session>

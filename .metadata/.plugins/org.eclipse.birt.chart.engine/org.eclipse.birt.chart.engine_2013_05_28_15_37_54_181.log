@@ -1,0 +1,206 @@
+5 28, 2013 3:37:54 午後 org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+情報: SWT Display Server: win32 v4,236
+5 28, 2013 3:37:54 午後 org.eclipse.birt.chart.device.swt.R31Enhance <clinit>
+情報: SWT の高度なグラフィック機能が有効になりました。
+5 28, 2013 3:37:54 午後 org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+情報: 図形コンテキスト org.eclipse.swt.graphics.GC@GC {755063971} を使用中
+5 28, 2013 3:37:55 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:37:55 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] を読み込みました。
+5 28, 2013 3:37:55 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:37:55 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:37:57 午後 org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+情報: SWT Display Server: win32 v4,236
+5 28, 2013 3:37:57 午後 org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+情報: 図形コンテキスト org.eclipse.swt.graphics.GC@GC {973168105} を使用中
+5 28, 2013 3:37:57 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:37:57 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] を読み込みました。
+5 28, 2013 3:37:57 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:37:57 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:37:59 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:37:59 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:37:59 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:37:59 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:37:59 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:37:59 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 3:38:00 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 8:14:49 午後 org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+情報: SWT Display Server: win32 v4,236
+5 28, 2013 8:14:49 午後 org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+情報: 図形コンテキスト org.eclipse.swt.graphics.GC@GC {-687779505} を使用中
+5 28, 2013 8:14:49 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 8:14:49 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] を読み込みました。
+5 28, 2013 8:14:49 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 8:14:49 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+情報: SWING Display Server: Oracle Corporation v1.7.0_15
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラスを読み込んでいます...
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.script.AbstractScriptHandler register
+情報: Chart Java イベント・ハンドラーのクラス [class org.eclipse.mat.impl.chart.LabelRenderScript] を読み込みました。
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+情報: 図形コンテキスト sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]] を使用中
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+情報: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.extension.render.Pie renderSeries
+情報: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+5 28, 2013 8:14:50 午後 org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+情報: {0} イメージ・ライター {1} を使用中pngcom.sun.imageio.plugins.png.PNGImageWriter
