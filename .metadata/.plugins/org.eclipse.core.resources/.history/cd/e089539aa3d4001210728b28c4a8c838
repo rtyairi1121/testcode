@@ -1,0 +1,19 @@
+package jp.co.rytairi;
+
+public class BasicClass {
+	private String name;
+	public Hello_xxx(){
+		this.name = "null";
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public String getName(){
+		return(this.name);
+	}
+	public void outputMessage(){
+		System.out.println("Hello‚ÌƒNƒ‰ƒX");
+	}
+}
+
