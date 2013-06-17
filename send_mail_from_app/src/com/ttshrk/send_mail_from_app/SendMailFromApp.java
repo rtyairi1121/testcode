@@ -37,13 +37,13 @@ import javax.activation.FileDataSource;
 
 public class SendMailFromApp extends Activity {
 	// 適切なアドレスを設定してください
-	private static final String FROM_ADDRESS = "cbs2testsrc006@gmail.com";
-	private static final String SENDER_ADDRESS = "sky.shower01@gmail.com";
-	private static final String TO_ADDRESS_01 = "sky.shower01@gmail.com";
-	private static final String TO_ADDRESS_02 = "sky.shower01@gmail.com";
-	private static final String GMAIL_ACCOUNT = "cbs2testsrc006@gmail.com";
-	private static final String GMAIL_PASSWORD = "au81KDDI";
-
+	private static final String FROM_ADDRESS = "";
+	private static final String SENDER_ADDRESS = "";
+	private static final String TO_ADDRESS_01 = "";
+	private static final String TO_ADDRESS_02 = "";
+	private static final String GMAIL_ACCOUNT = "";
+	private static final String GMAIL_PASSWORD = "";
+	
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -215,10 +215,10 @@ public class SendMailFromApp extends Activity {
 			msg.setSender(new InternetAddress(SENDER_ADDRESS));
 			msg.setRecipient(Message.RecipientType.TO, new InternetAddress(
 					TO_ADDRESS_02));
-
+			
 			// related
 			Multipart relatedPart = new MimeMultipart("related");
-
+			
 			// alternative
 			MimeBodyPart alternativeBodyPart = new MimeBodyPart();
 			Multipart alternativePart = new MimeMultipart("alternative");
@@ -248,10 +248,10 @@ public class SendMailFromApp extends Activity {
 			imageBodyPart.setDisposition("inline");	    // inline指定しておく
 			imageBodyPart.setContentID("12345@12345");  // CIDを指定
 			relatedPart.addBodyPart(imageBodyPart);
-
+			
 			// set related
 			msg.setContent(relatedPart);
-
+			
 			sendGmail(msg, session);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
@@ -262,7 +262,7 @@ public class SendMailFromApp extends Activity {
 	}
 
 	/**
-	 *
+	 * 
 	 * @return
 	 */
 	private Session createSendGMailSession() {
@@ -280,7 +280,7 @@ public class SendMailFromApp extends Activity {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param msg
 	 * @param session
 	 * @throws MessagingException
