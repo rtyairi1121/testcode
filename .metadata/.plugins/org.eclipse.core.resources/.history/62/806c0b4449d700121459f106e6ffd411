@@ -1,0 +1,8 @@
+package jp.co.rytairi;
+
+public interface AbstClass {
+	public abstract void language();
+	public abstract void style();
+	public static final int isabst = 1;
+
+}

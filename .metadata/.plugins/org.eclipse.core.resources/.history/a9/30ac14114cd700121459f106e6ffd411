@@ -1,0 +1,13 @@
+package jp.co.rytairi;
+
+public class AbstClass implements Interface {
+	int gengo;
+	String hougen;
+	public int language(){
+		this.gengo = 1;
+		return(this.gengo);
+	}
+	public void style(){
+		this.hougen = "kansai";
+	}
+}
