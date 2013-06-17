@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SendMailFromApp!</string>
+    <string name="app_name">send mail from app</string>
+    <string name="send_mail">メール送信(utf8 softbank.ne.jp)</string>
+    <string name="send_mail2">メール送信(utf8 i.softbank.jp)</string>
+    <string name="send_mail3">メール送信(sjis softbank.ne.jp)</string>
+    <string name="send_mail4">メール送信(sjis i.softbank.jp)</string>
+    <string name="send_mail5">メール送信(utf-8 gmail)</string>
+</resources>
