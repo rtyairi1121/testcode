@@ -39,6 +39,19 @@
     "javaRuntime": false
   },
   {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "322db3959c3383f4be9daa75ffa427d1485879ad",
+    "jarFileModificationDate": "2013-03-21T13:39:05.698+09:00",
+    "location": "C:\\Users\\EXASADMIN01\\android-sdks\\platforms\\android-17\\android.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "android-support-v4",
     "version": {
       "major": -1,
@@ -78,16 +91,16 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "mail",
+    "symbolicName": "android",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "428e267abff0d10802ccde86b915da2c20471160",
-    "jarFileModificationDate": "2013-06-17T11:41:59.963+09:00",
-    "location": "C:\\Users\\EXASADMIN01\\Desktop\\send_mail_from_app\\libs\\mail.jar",
+    "jarFileFingerprint": "f3fec4e3d887c5bba177bd62933a8e9ee4b4403c",
+    "jarFileModificationDate": "2012-11-14T15:22:00.887+09:00",
+    "location": "C:\\Android\\android-sdk\\platforms\\android-17\\android.jar",
     "javaRuntime": false
   },
   {
@@ -101,6 +114,19 @@
     "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
     "jarFileModificationDate": "2013-03-21T21:17:20.936+09:00",
     "location": "C:\\Android\\eclipse\\Service\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-06-18T21:14:16.306+09:00",
+    "location": "C:\\Android\\eclipse\\workspace\\Version.test\\libs\\android-support-v4.jar",
     "javaRuntime": false
   },
   {
@@ -143,19 +169,6 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "android-support-v4",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
-    "jarFileModificationDate": "2013-04-18T20:36:11.291+09:00",
-    "location": "C:\\Android\\eclipse\\workspace\\alarm_manager\\libs\\android-support-v4.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -167,6 +180,19 @@
     "jarFileModificationDate": "2013-03-21T13:01:39.454+09:00",
     "location": "C:\\Android\\eclipse\\jre\\lib\\jce.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-04-18T20:36:11.291+09:00",
+    "location": "C:\\Android\\eclipse\\workspace\\alarm_manager\\libs\\android-support-v4.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "android-support-v4",
@@ -286,6 +312,19 @@
     "javaRuntime": true
   },
   {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d066505750a09d6cc5ea8e78d4d26ab6cbf96a91",
+    "jarFileModificationDate": "2013-03-21T13:03:26.182+09:00",
+    "location": "C:\\Android\\eclipse\\plugins\\org.junit_3.8.2.v3_8_2_v20100427-1100\\junit.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -296,6 +335,19 @@
     "jarFileFingerprint": "3fd7709166f70fe311b45a7bafe7cdccbecf6b04",
     "jarFileModificationDate": "2013-03-21T13:01:42.451+09:00",
     "location": "C:\\Android\\eclipse\\jre\\lib\\ext\\sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2013-03-21T13:01:42.349+09:00",
+    "location": "C:\\Android\\eclipse\\jre\\lib\\ext\\sunmscapi.jar",
     "javaRuntime": true
   },
   {
@@ -310,19 +362,6 @@
     "jarFileModificationDate": "2013-03-21T22:28:30.264+09:00",
     "location": "C:\\Android\\eclipse\\workspace\\Service3\\libs\\android-support-v4.jar",
     "javaRuntime": false
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
-    "jarFileModificationDate": "2013-03-21T13:01:42.349+09:00",
-    "location": "C:\\Android\\eclipse\\jre\\lib\\ext\\sunmscapi.jar",
-    "javaRuntime": true
   },
   {
     "symbolicName": "android-support-v4",
@@ -361,19 +400,6 @@
     "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
     "jarFileModificationDate": "2013-03-28T22:46:25.470+09:00",
     "location": "C:\\Android\\eclipse\\workspace\\Sample.contacts\\libs\\android-support-v4.jar",
-    "javaRuntime": false
-  },
-  {
-    "symbolicName": "additionnal",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "bd9e8dc422bb8c8405359947fe9f4282b49f57f4",
-    "jarFileModificationDate": "2013-06-17T11:41:59.849+09:00",
-    "location": "C:\\Users\\EXASADMIN01\\Desktop\\send_mail_from_app\\libs\\additionnal.jar",
     "javaRuntime": false
   },
   {
@@ -455,19 +481,6 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "activation",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "d1257cbff6faa44c1f325ae0d9413522d4644383",
-    "jarFileModificationDate": "2013-06-17T11:41:59.755+09:00",
-    "location": "C:\\Users\\EXASADMIN01\\Desktop\\send_mail_from_app\\libs\\activation.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "android-support-v4",
     "version": {
       "major": -1,
@@ -504,6 +517,19 @@
     "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
     "jarFileModificationDate": "2013-04-02T17:25:32.421+09:00",
     "location": "C:\\Android\\eclipse\\workspace\\SampleBatteryWidget\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "uiautomator",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6795f842114d7135796fb50f6d4820ef6874644c",
+    "jarFileModificationDate": "2012-11-14T15:21:58.884+09:00",
+    "location": "C:\\Android\\android-sdk\\platforms\\android-17\\uiautomator.jar",
     "javaRuntime": false
   },
   {
@@ -598,29 +624,16 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "mb_emoji",
+    "symbolicName": "android",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "a5332cb9b5015dbac3f7465e7a40fd95b4f79581",
-    "jarFileModificationDate": "2013-06-17T11:41:59.993+09:00",
-    "location": "C:\\Users\\EXASADMIN01\\Desktop\\send_mail_from_app\\libs\\mb_emoji.jar",
-    "javaRuntime": false
-  },
-  {
-    "symbolicName": "android-support-v4",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
-    "jarFileModificationDate": "2013-03-22T21:25:49.394+09:00",
-    "location": "C:\\Android\\eclipse\\workspace\\Background\\libs\\android-support-v4.jar",
+    "jarFileFingerprint": "47ffff881d2fe54d5c646fcc3a646bf291008448",
+    "jarFileModificationDate": "2013-03-21T14:16:15.073+09:00",
+    "location": "C:\\Users\\EXASADMIN01\\android-sdks\\platforms\\android-16\\android.jar",
     "javaRuntime": false
   },
   {
@@ -637,16 +650,16 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "android",
+    "symbolicName": "android-support-v4",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "47ffff881d2fe54d5c646fcc3a646bf291008448",
-    "jarFileModificationDate": "2013-03-21T14:16:15.073+09:00",
-    "location": "C:\\Users\\EXASADMIN01\\android-sdks\\platforms\\android-16\\android.jar",
+    "jarFileFingerprint": "307c1cc532eabbf1d135b43e5c983c9da700449d",
+    "jarFileModificationDate": "2013-03-22T21:25:49.394+09:00",
+    "location": "C:\\Android\\eclipse\\workspace\\Background\\libs\\android-support-v4.jar",
     "javaRuntime": false
   },
   {

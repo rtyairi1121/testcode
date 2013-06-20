@@ -1,0 +1,76 @@
+package co.jp.rtyairi;
+
+import java.io.File;
+
+import android.util.Log;
+import android.widget.TextView;
+
+import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiScrollable;
+import com.android.uiautomator.core.UiSelector;
+import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+
+public class UItest extends UiAutomatorTestCase {
+
+    public void testAddition() throws UiObjectNotFoundException {
+    	int i = 0;
+        // 1. ホームボタンを押してアプリケーションランチャーを表示する。
+        getUiDevice().pressHome();
+
+        //以下FriendsNote
+        UiObject friendsNote = new UiObject(new UiSelector().text("Friends Note"));
+        friendsNote.clickAndWaitForNewWindow();
+
+        //かんたんログインをタップ
+        //getUiDevice().click(577,592);
+
+        // 投稿ボタン（ヒエラルキをたどって取得）
+        //メニューボタンをタップ
+        UiObject frame0 = new UiObject(new UiSelector().index(0));
+        UiObject liner0 = frame0.getChild(new UiSelector().index(0));
+        UiObject frame1 = liner0.getChild(new UiSelector().index(0));
+        UiObject relative0 = frame1.getChild(new UiSelector().index(0));
+        UiObject frame2 = relative0.getChild(new UiSelector().index(3));
+        UiObject liner1 = frame2.getChild(new UiSelector().index(0));
+        UiObject relative1 = liner1.getChild(new UiSelector().index(3));
+        UiObject liner2 = relative1.getChild(new UiSelector().index(0));
+        liner2.clickAndWaitForNewWindow();
+
+
+        //アドレス帳バックアップをタップ
+        UiObject relative10 = relative0.getChild(new UiSelector().index(0));
+        UiObject list10 = relative10.getChild(new UiSelector().index(1));
+        UiObject relative11 = list10.getChild(new UiSelector().index(2));
+        UiObject text10 = relative11.getChild(new UiSelector().index(0));
+        text10.clickAndWaitForNewWindow();
+
+        //スマートフォン保存をタップ
+        UiObject frame20 = relative0.getChild(new UiSelector().index(2));
+        UiObject relative20 = frame20.getChild(new UiSelector().index(0));
+        UiObject scroll20 = relative20.getChild(new UiSelector().index(1));
+        UiObject linear20 = scroll20.getChild(new UiSelector().index(0));
+        UiObject linear21 = linear20.getChild(new UiSelector().index(3));
+        UiObject linear22 = linear21.getChild(new UiSelector().index(0));
+        linear22.clickAndWaitForNewWindow();
+
+        //スマートフォンに保存のポップアップで「はい」を選択
+        UiObject frame30 = frame0.getChild(new UiSelector().index(0));
+        UiObject frame31 = frame30.getChild(new UiSelector().index(0));
+        UiObject linear30 = frame31.getChild(new UiSelector().index(0));
+        UiObject linear31 = linear30.getChild(new UiSelector().index(2));
+        UiObject linear32 = linear31.getChild(new UiSelector().index(0));
+        UiObject button30 = linear32.getChild(new UiSelector().index(0));
+        button30.clickAndWaitForNewWindow();
+
+        //notificationを表示
+        //UiObject notification1 = new UiObject(new UiSelector().index(0));
+        getUiDevice().swipe(509,12,509,1752,10);
+
+        //notificationのFriendsNoteをタップ
+        UiObject notificationfriednsnote = new UiObject(new UiSelector().text("Friends Note同期処理"));
+        notificationfriednsnote.clickBottomRight();
+    }
+
+}

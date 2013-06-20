@@ -1,0 +1,27 @@
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: class=co.jp.rtyairi.UItest
+INSTRUMENTATION_STATUS: stream=
+co.jp.rtyairi.UItest:
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: test=testAddition
+INSTRUMENTATION_STATUS_CODE: 1
+スマートフォンに、アドレス帳データを取り込みました。
+222
+スマートフォンに、アドレス帳データを取り込みました。
+444
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: class=co.jp.rtyairi.UItest
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: test=testAddition
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for UiAutomatorTestRunner=.
+Time: 18.349
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1

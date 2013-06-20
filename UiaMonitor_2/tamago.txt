@@ -1,0 +1,388 @@
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+  Main stack:
+  * TaskRecord{4445c180 #19 A tamago.android.com U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=tamago.android.com
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=tamago.android.com/tamgo.android.com.TamagoActivity}
+    realActivity=tamago.android.com/tamgo.android.com.TamagoActivity
+    askedCompatMode=false
+    lastThumbnail=null lastDescription=null
+    lastActiveTime=64587136 (inactive for 69s)
+    * Hist #9: ActivityRecord{42103a48 tamago.android.com/tamgo.android.com.TamagoActivity}
+        packageName=tamago.android.com processName=tamago.android.com
+        launchedFromUid=10044 userId=0
+        app=ProcessRecord{421b5660 13619:tamago.android.com/u0a284}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=tamago.android.com/tamgo.android.com.TamagoActivity bnds=[540,145][810,484] }
+        frontOfTask=true task=TaskRecord{4445c180 #19 A tamago.android.com U 0}
+        taskAffinity=tamago.android.com
+        realActivity=tamago.android.com/tamgo.android.com.TamagoActivity
+        baseDir=/data/app/tamago.android.com-1.apk
+        dataDir=/data/data/tamago.android.com
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f040001 icon=0x7f020001 theme=0x0
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=false icicle=null
+        state=RESUMED stopped=false delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=true sleeping=false idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=0
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{4445c180 #19 A tamago.android.com U 0}
+        waitingVisible=false nowVisible=true lastVisibleTime=-1m8s577ms
+  * TaskRecord{425868a8 #4 A com.sonyericsson.home U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.sonyericsson.home
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.sonyericsson.home/.HomeActivity}
+    realActivity=com.sonyericsson.home/.HomeActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@420fd970 lastDescription=null
+    lastActiveTime=64587070 (inactive for 69s)
+    * Hist #8: ActivityRecord{42120b20 com.sonyericsson.home/.HomeActivity}
+        packageName=com.sonyericsson.home processName=com.sonyericsson.home
+        launchedFromUid=10078 userId=0
+        app=ProcessRecord{4277b6d0 1211:com.sonyericsson.home/u0a44}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.sonyericsson.home/.HomeActivity }
+        frontOfTask=true task=TaskRecord{425868a8 #4 A com.sonyericsson.home U 0}
+        taskAffinity=com.sonyericsson.home
+        realActivity=com.sonyericsson.home/.HomeActivity
+        baseDir=/system/app/Home.apk
+        dataDir=/data/data/com.sonyericsson.home
+        stateNotNeeded=false componentSpecified=false isHomeActivity=true
+        compat={480dpi} labelRes=0x7f070001 icon=0x7f020067 theme=0x7f0a0000
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=3636]
+        state=STOPPED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=false idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=2
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{425868a8 #4 A com.sonyericsson.home U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-5m48s701ms
+  * TaskRecord{44556258 #18 A jibe.android.activity U 0}
+    numActivities=1 rootWasReset=false userId=0
+    affinity=jibe.android.activity
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 pkg=jibe.android.activity cmp=jibe.android.activity/.LoginActivity}
+    realActivity=jibe.android.activity/.LoginActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43a0caf0 lastDescription=null
+    lastActiveTime=64193417 (inactive for 462s)
+    * Hist #7: ActivityRecord{42185010 jibe.android.activity/.LoginActivity}
+        packageName=jibe.android.activity processName=jibe.android.activity
+        launchedFromUid=10223 userId=0
+        app=ProcessRecord{428e0800 13333:jibe.android.activity/u0a223}
+        Intent { cmp=jibe.android.activity/.LoginActivity (has extras) }
+        frontOfTask=true task=TaskRecord{44556258 #18 A jibe.android.activity U 0}
+        taskAffinity=jibe.android.activity
+        realActivity=jibe.android.activity/.LoginActivity
+        baseDir=/data/app/jibe.android.activity-2.apk
+        dataDir=/data/data/jibe.android.activity
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f0d0004 icon=0x7f0200cb theme=0x7f0e00d1
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=1040]
+        state=STOPPED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=false idle=true
+        fullscreen=false noDisplay=false immersive=false launchMode=0
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{44556258 #18 A jibe.android.activity U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-7m44s577ms
+  * TaskRecord{426c7c20 #17 A com.opera.browser U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.opera.browser
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.opera.browser cmp=com.opera.browser/com.opera.Opera}
+    realActivity=com.opera.browser/com.opera.Opera
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@4405a3e8 lastDescription=null
+    lastActiveTime=64187634 (inactive for 468s)
+    * Hist #6: ActivityRecord{42158b30 com.opera.browser/com.opera.Opera}
+        packageName=com.opera.browser processName=com.opera.browser
+        launchedFromUid=10044 userId=0
+        app=ProcessRecord{42156280 12637:com.opera.browser/u0a272}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.opera.browser cmp=com.opera.browser/com.opera.Opera bnds=[810,484][1080,823] }
+        frontOfTask=true task=TaskRecord{426c7c20 #17 A com.opera.browser U 0}
+        taskAffinity=com.opera.browser
+        realActivity=com.opera.browser/com.opera.Opera
+        baseDir=/data/app/com.opera.browser-1.apk
+        dataDir=/data/data/com.opera.browser
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f050002 icon=0x7f020002 theme=0x7f060000
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=476]
+        state=STOPPED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=false idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=2
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{426c7c20 #17 A com.opera.browser U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-7m44s586ms
+        connections=[]
+  * TaskRecord{43a11ac8 #14 A com.kazupoooon.cpviewer U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.kazupoooon.cpviewer
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kazupoooon.cpviewer/.Main}
+    realActivity=com.kazupoooon.cpviewer/.Main
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43d8b6c8 lastDescription=null
+    lastActiveTime=50343720 (inactive for 14312s)
+    * Hist #5: ActivityRecord{43f42d68 com.kazupoooon.cpviewer/.Main}
+        packageName=com.kazupoooon.cpviewer processName=com.kazupoooon.cpviewer
+        launchedFromUid=10044 userId=0
+        app=null
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kazupoooon.cpviewer/.Main bnds=[36,852][288,1140] }
+        frontOfTask=true task=TaskRecord{43a11ac8 #14 A com.kazupoooon.cpviewer U 0}
+        taskAffinity=com.kazupoooon.cpviewer
+        realActivity=com.kazupoooon.cpviewer/.Main
+        baseDir=/data/app/com.kazupoooon.cpviewer-1.apk
+        dataDir=/data/data/com.kazupoooon.cpviewer
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f040000 icon=0x7f020000 theme=0x103000c
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=896]
+        state=DESTROYED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=false idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=0
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{43a11ac8 #14 A com.kazupoooon.cpviewer U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-3h19m31s193ms
+  * TaskRecord{427929e0 #9 A com.android.vending U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.android.vending
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.vending/.AssetBrowserActivity}
+    realActivity=com.android.vending/.AssetBrowserActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@44553e28 lastDescription=null
+    lastActiveTime=2197368 (inactive for 62459s)
+    * Hist #4: ActivityRecord{426bad58 com.android.vending/.AssetBrowserActivity}
+        packageName=com.android.vending processName=com.android.vending
+        launchedFromUid=10044 userId=0
+        app=null
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.vending/.AssetBrowserActivity bnds=[270,1162][540,1501] }
+        frontOfTask=true task=TaskRecord{427929e0 #9 A com.android.vending U 0}
+        taskAffinity=com.android.vending
+        realActivity=com.android.vending/.AssetBrowserActivity
+        baseDir=/data/app/com.android.vending-1.apk
+        dataDir=/data/data/com.android.vending
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f0700f6 icon=0x7f030003 theme=0x7f0d0050
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=28608]
+        state=DESTROYED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=false idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=1
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{427929e0 #9 A com.android.vending U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-5h4m56s709ms
+  * TaskRecord{428f3870 #8 A com.estrongs.android.pop U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.estrongs.android.pop
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.estrongs.android.pop cmp=com.estrongs.android.pop/.view.FileExplorerActivity}
+    realActivity=com.estrongs.android.pop/.view.FileExplorerActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43db2b50 lastDescription=null
+    lastActiveTime=2050161 (inactive for 62606s)
+    * Hist #3: ActivityRecord{421e2158 com.estrongs.android.pop/.view.FileExplorerActivity}
+        packageName=com.estrongs.android.pop processName=com.estrongs.android.pop
+        launchedFromUid=10044 userId=0
+        app=null
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.estrongs.android.pop cmp=com.estrongs.android.pop/.view.FileExplorerActivity bnds=[0,484][270,823] }
+        frontOfTask=true task=TaskRecord{428f3870 #8 A com.estrongs.android.pop U 0}
+        taskAffinity=com.estrongs.android.pop
+        realActivity=com.estrongs.android.pop/.view.FileExplorerActivity
+        baseDir=/data/app/com.estrongs.android.pop-1.apk
+        dataDir=/data/data/com.estrongs.android.pop
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f0902fa icon=0x7f020048 theme=0x1030006
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=7324]
+        state=DESTROYED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=false idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=1
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{428f3870 #8 A com.estrongs.android.pop U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-5h5m22s634ms
+  * TaskRecord{43d86d40 #7 A com.android.settings U 0}
+    numActivities=2 rootWasReset=true userId=0
+    affinity=com.android.settings
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings}
+    realActivity=com.android.settings/.Settings
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@423bc448 lastDescription=null
+    lastActiveTime=147761 (inactive for 64508s)
+    * Hist #2: ActivityRecord{4224bae0 com.android.settings/.SubSettings}
+        packageName=com.android.settings processName=com.android.settings
+        launchedFromUid=1000 userId=0
+        app=null
+        Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras) }
+        frontOfTask=false task=TaskRecord{43d86d40 #7 A com.android.settings U 0}
+        taskAffinity=com.android.settings
+        realActivity=com.android.settings/.SubSettings
+        baseDir=/system/app/Settings.apk
+        dataDir=/data/data/com.android.settings
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f07018d icon=0x7f030000 theme=0x7f0f0023
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=16056]
+        state=DESTROYED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=true idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=0
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{43d86d40 #7 A com.android.settings U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-5h37m4s736ms
+    * Hist #1: ActivityRecord{44157470 com.android.settings/.Settings}
+        packageName=com.android.settings processName=com.android.settings
+        launchedFromUid=10044 userId=0
+        app=null
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings bnds=[810,823][1080,1162] }
+        frontOfTask=true task=TaskRecord{43d86d40 #7 A com.android.settings U 0}
+        taskAffinity=com.android.settings
+        realActivity=com.android.settings/.Settings
+        baseDir=/system/app/Settings.apk
+        dataDir=/data/data/com.android.settings
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f07018e icon=0x7f030000 theme=0x7f0f0023
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=11540]
+        state=DESTROYED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=true idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=2
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{43d86d40 #7 A com.android.settings U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-5h37m7s606ms
+  * TaskRecord{42772a78 #6 A com.kddi.android.easysettingwizard U 0}
+    numActivities=1 rootWasReset=false userId=0
+    affinity=com.kddi.android.easysettingwizard
+    intent={flg=0x10000000 cmp=com.kddi.android.easysettingwizard/.ui.InformationActivity}
+    realActivity=com.kddi.android.easysettingwizard/.ui.InformationActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@427d9388 lastDescription=null
+    lastActiveTime=139333 (inactive for 64517s)
+    * Hist #0: ActivityRecord{4275f708 com.kddi.android.easysettingwizard/.ui.InformationActivity}
+        packageName=com.kddi.android.easysettingwizard processName=com.kddi.android.easysettingwizard
+        launchedFromUid=10195 userId=0
+        app=null
+        Intent { flg=0x10000000 cmp=com.kddi.android.easysettingwizard/.ui.InformationActivity }
+        frontOfTask=true task=TaskRecord{42772a78 #6 A com.kddi.android.easysettingwizard U 0}
+        taskAffinity=com.kddi.android.easysettingwizard
+        realActivity=com.kddi.android.easysettingwizard/.ui.InformationActivity
+        baseDir=/system/app/com.kddi.android.easysettingwizard.apk
+        dataDir=/data/data/com.kddi.android.easysettingwizard
+        stateNotNeeded=false componentSpecified=true isHomeActivity=false
+        compat={480dpi} labelRes=0x7f07000c icon=0x7f020020 theme=0x7f080009
+        config={1.0 440mcc50mnc ja_JP sw360dp w360dp h567dp nrml port finger -keyb/v/h -nav/h skinPackage=com.sonyericsson.blackthemeblueaccent s.5}
+        launchFailed=false haveState=true icicle=Bundle[mParcelledData.dataSize=736]
+        state=DESTROYED stopped=true delayedResume=false finishing=false
+        keysPaused=false inHistory=true visible=false sleeping=true idle=true
+        fullscreen=true noDisplay=false immersive=false launchMode=0
+        frozenBeforeDestroy=false thumbnailNeeded=false forceNewConfig=false
+        thumbHolder=TaskRecord{42772a78 #6 A com.kddi.android.easysettingwizard U 0}
+        waitingVisible=false nowVisible=false lastVisibleTime=-5h37m27s163ms
+ 
+  Running activities (most recent first):
+    TaskRecord{4445c180 #19 A tamago.android.com U 0}
+      Run #3: ActivityRecord{42103a48 tamago.android.com/tamgo.android.com.TamagoActivity}
+    TaskRecord{425868a8 #4 A com.sonyericsson.home U 0}
+      Run #2: ActivityRecord{42120b20 com.sonyericsson.home/.HomeActivity}
+    TaskRecord{44556258 #18 A jibe.android.activity U 0}
+      Run #1: ActivityRecord{42185010 jibe.android.activity/.LoginActivity}
+    TaskRecord{426c7c20 #17 A com.opera.browser U 0}
+      Run #0: ActivityRecord{42158b30 com.opera.browser/com.opera.Opera}
+ 
+  mResumedActivity: ActivityRecord{42103a48 tamago.android.com/tamgo.android.com.TamagoActivity}
+  mFocusedActivity: ActivityRecord{42103a48 tamago.android.com/tamgo.android.com.TamagoActivity}
+  mLastPausedActivity: ActivityRecord{42120b20 com.sonyericsson.home/.HomeActivity}
+  mSleepTimeout: false
+  mDismissKeyguardOnNextActivity: false
+
+  Recent tasks:
+  * Recent #0: TaskRecord{4445c180 #19 A tamago.android.com U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=tamago.android.com
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=tamago.android.com/tamgo.android.com.TamagoActivity}
+    realActivity=tamago.android.com/tamgo.android.com.TamagoActivity
+    askedCompatMode=false
+    lastThumbnail=null lastDescription=null
+    lastActiveTime=64587136 (inactive for 69s)
+  * Recent #1: TaskRecord{425868a8 #4 A com.sonyericsson.home U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.sonyericsson.home
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.sonyericsson.home/.HomeActivity}
+    realActivity=com.sonyericsson.home/.HomeActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@420fd970 lastDescription=null
+    lastActiveTime=64587070 (inactive for 69s)
+  * Recent #2: TaskRecord{44556258 #18 A jibe.android.activity U 0}
+    numActivities=1 rootWasReset=false userId=0
+    affinity=jibe.android.activity
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 pkg=jibe.android.activity cmp=jibe.android.activity/.LoginActivity}
+    realActivity=jibe.android.activity/.LoginActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43a0caf0 lastDescription=null
+    lastActiveTime=64193417 (inactive for 463s)
+  * Recent #3: TaskRecord{426c7c20 #17 A com.opera.browser U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.opera.browser
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.opera.browser cmp=com.opera.browser/com.opera.Opera}
+    realActivity=com.opera.browser/com.opera.Opera
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@4405a3e8 lastDescription=null
+    lastActiveTime=64187634 (inactive for 468s)
+  * Recent #4: TaskRecord{42cf5960 #16 A com.sonyericsson.usbux U 0}
+    affinity=com.sonyericsson.usbux
+    intent={flg=0x10800000 cmp=com.sonyericsson.usbux/.dialogs.PcCompanionInstallationActivity}
+    realActivity=com.sonyericsson.usbux/.dialogs.PcCompanionInstallationActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43b82858 lastDescription=null
+    lastActiveTime=61729933 (inactive for 2926s)
+  * Recent #5: TaskRecord{43a11ac8 #14 A com.kazupoooon.cpviewer U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.kazupoooon.cpviewer
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kazupoooon.cpviewer/.Main}
+    realActivity=com.kazupoooon.cpviewer/.Main
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43d8b6c8 lastDescription=null
+    lastActiveTime=50343720 (inactive for 14312s)
+  * Recent #6: TaskRecord{427929e0 #9 A com.android.vending U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.android.vending
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.vending/.AssetBrowserActivity}
+    realActivity=com.android.vending/.AssetBrowserActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@44553e28 lastDescription=null
+    lastActiveTime=2197368 (inactive for 62459s)
+  * Recent #7: TaskRecord{428f3870 #8 A com.estrongs.android.pop U 0}
+    numActivities=1 rootWasReset=true userId=0
+    affinity=com.estrongs.android.pop
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.estrongs.android.pop cmp=com.estrongs.android.pop/.view.FileExplorerActivity}
+    realActivity=com.estrongs.android.pop/.view.FileExplorerActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@43db2b50 lastDescription=null
+    lastActiveTime=2050161 (inactive for 62606s)
+  * Recent #8: TaskRecord{43d86d40 #7 A com.android.settings U 0}
+    numActivities=2 rootWasReset=true userId=0
+    affinity=com.android.settings
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings}
+    realActivity=com.android.settings/.Settings
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@423bc448 lastDescription=null
+    lastActiveTime=147761 (inactive for 64508s)
+  * Recent #9: TaskRecord{42772a78 #6 A com.kddi.android.easysettingwizard U 0}
+    numActivities=1 rootWasReset=false userId=0
+    affinity=com.kddi.android.easysettingwizard
+    intent={flg=0x10000000 cmp=com.kddi.android.easysettingwizard/.ui.InformationActivity}
+    realActivity=com.kddi.android.easysettingwizard/.ui.InformationActivity
+    askedCompatMode=false
+    lastThumbnail=android.graphics.Bitmap@427d9388 lastDescription=null
+    lastActiveTime=139333 (inactive for 64517s)
+  * Recent #10: TaskRecord{427987a0 #3 A com.sonymobile.kddi.settings U 0}
+    affinity=com.sonymobile.kddi.settings
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10800000 cmp=com.sonymobile.kddi.settings/.KddiInitBridge}
+    realActivity=com.sonymobile.kddi.settings/.KddiInitBridge
+    askedCompatMode=false
+    lastThumbnail=null lastDescription=null
+    lastActiveTime=119772 (inactive for 64536s)
+  * Recent #11: TaskRecord{422a0be0 #2 A com.sonyericsson.setupwizard U 0}
+    affinity=com.sonyericsson.setupwizard
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.sonyericsson.setupwizard/.SetupWizardEntry}
+    realActivity=com.sonyericsson.setupwizard/.SetupWizardEntry
+    askedCompatMode=false
+    lastThumbnail=null lastDescription=null
+    lastActiveTime=119414 (inactive for 64537s)
+ 
+  mCurTask: 19

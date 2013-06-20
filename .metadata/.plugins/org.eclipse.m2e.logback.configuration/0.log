@@ -1226,3 +1226,5 @@ java.util.zip.ZipException: zip file is empty
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_15]
 	at java.lang.Thread.run(Thread.java:722) [na:1.7.0_15]
 2013-06-17 21:32:17,551 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-06-19 10:22:08,947 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-06-19 13:47:46,606 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8

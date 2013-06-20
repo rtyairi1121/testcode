@@ -1,0 +1,36 @@
+package uiaMonitor_2;
+
+import android.util.Log;
+import android.widget.TextView;
+
+import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiScrollable;
+import com.android.uiautomator.core.UiSelector;
+import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+
+public class CalculatorTest extends UiAutomatorTestCase {
+
+    public void testAddition() throws UiObjectNotFoundException {
+        // 1. ホームボタンを押してアプリケーションランチャーを表示する。
+        getUiDevice().pressHome();
+
+        //以下FriendsNote
+        UiObject friendsNote = new UiObject(new UiSelector().text("Friends Note"));
+        friendsNote.clickAndWaitForNewWindow();
+        getUiDevice().click(577,592);
+
+        UiObject menue = new UiObject(new UiSelector().text("メニュー"));
+        menue.clickAndWaitForNewWindow();
+
+        /*
+        UiObject auIDSettei = new UiObject(new UiSelector().text("auID を設定"));
+        auIDSettei.clickAndWaitForNewWindow();
+
+        UiObject ok = new UiObject(new UiSelector().text("OK"));
+        ok.clickAndWaitForNewWindow();
+ */
+    }
+
+}

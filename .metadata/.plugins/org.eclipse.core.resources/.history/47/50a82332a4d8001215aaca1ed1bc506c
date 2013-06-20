@@ -1,0 +1,94 @@
+package uiaMonitor_2;
+
+import android.util.Log;
+import android.widget.TextView;
+
+import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiScrollable;
+import com.android.uiautomator.core.UiSelector;
+import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+
+public class CalculatorTest extends UiAutomatorTestCase {
+
+    public void testAddition() throws UiObjectNotFoundException {
+        // 1. ホームボタンを押してアプリケーションランチャーを表示する。
+        getUiDevice().pressHome();
+
+        UiObject friendsNote = new UiObject(new UiSelector().text("Friends Note"));
+        friendsNote.clickAndWaitForNewWindow();
+
+        /*
+        UiObject kanatanLogin = new UiObject(new UiSelector().text("かんたんログイン"));
+        kanatanLogin.clickAndWaitForNewWindow();
+        */
+        Log.i("WebViewNavigatorTest", "About to start navigating down the contents of the webview");
+        int closeToInfinity = 10;
+        for (int i = 0; i < closeToInfinity; i++) {
+            boolean goneDown = getUiDevice().pressDPadDown();
+            if (!goneDown) {
+                break;
+            }
+
+            String lastTraversedText = getUiDevice().getLastTraversedText();
+            if (lastTraversedText != null) {
+                Log.i("WebViewNavigatorTest", lastTraversedText);
+            } else {
+                Log.w("WebViewNavigatorTest", "(null) returned for getLastTraversedText()");
+            }
+        }
+/*
+        // 2. アプリケーションランチャーから電卓アプリを起動する。
+        UiObject allAppsButton = new UiObject(new UiSelector().description("アプリ"));
+        allAppsButton.clickAndWaitForNewWindow();
+        UiObject appsTab = new UiObject(new UiSelector().text("アプリ"));
+        appsTab.click();
+
+        // スワイプしながらアイテムを検索できるUiScrollableインスタンスを作成
+        UiScrollable appViews = new UiScrollable(new UiSelector().scrollable(true));
+        // スワイプ時のスクロール方向を水平方向に設定
+        appViews.setAsHorizontalList();
+
+        // アプリランチャーの子ビューから以下の条件を満たすUIオブジェクトを取得
+        // 「クラス名が"android.widget.TextView"」、かつ、「テキストが"電卓"」
+        UiObject targetApp = appViews.getChildByText(
+                new UiSelector().className(TextView.class.getName()),
+                "電卓");
+        // 見つかったUIオブジェクト（ここでは電卓アプリアイコン）をクリックする
+        targetApp.clickAndWaitForNewWindow();
+
+        // 指定したパッケージ名のアプリの存在を確認する
+        UiObject appValidation = new UiObject(
+                new UiSelector().packageName("com.android.calculator2"));
+        assertTrue(appValidation.exists());
+
+        // 3.電卓アプリの"削除"ボタンを長押しして、結果をクリアする。
+        UiObject buttonClear = new UiObject(new UiSelector().text("削除"));
+        buttonClear.longClick(); // 長押し
+
+        // 4. 電卓アプリで「 1 」「 + 」「 2 」「 = 」ボタンをクリックし、結果が「 3 」であることを確認する。
+
+        // "1"ボタンを押す
+        UiObject button1 = new UiObject(new UiSelector().text("1"));
+        button1.click();
+        // "+"ボタンを押す
+        UiObject buttonPlus = new UiObject(new UiSelector().text("+"));
+        buttonPlus.click();
+        // "2"ボタンを押す
+        UiObject button2 = new UiObject(new UiSelector().text("2"));
+        button2.click();
+        // "="ボタンを押す
+        UiObject buttonEqual = new UiObject(new UiSelector().text("="));
+        buttonEqual.click();
+
+        // エディットテキストの値を取得する
+        UiObject editText = new UiObject(new UiSelector().className("android.widget.EditText"));
+        String textEditText = editText.getText();
+
+        // 結果を確認する
+        assertEquals(String.valueOf("3"), textEditText);
+*/
+    }
+
+}
